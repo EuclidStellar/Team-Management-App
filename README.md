@@ -50,11 +50,31 @@ Follow these steps to get started with the Flutter Team Management App:
 2. Install dependencies using `flutter pub get`.
 3. Run the app with `flutter run`.
 
+## Code of Conduct
 
+Please review our [Code of Conduct](CODE_OF_CONDUCT.md) to understand the expectations for participation in our community.
 
 ## Contributing
 
 We welcome contributions! If you have suggestions or want to contribute to the project, please follow our [contribution guidelines](CONTRIBUTING.md).
+
+## Contribution
+
+Contributions are welcome! If you have improvements, suggestions, or additional features, feel free to open an issue or create a pull request.
+
+1. Fork the repository.
+2. Create a new branch for your feature: `git checkout -b feature-name`
+3. Commit your changes: `git commit -m 'Add new feature'`
+4. Push to the branch: `git push origin feature-name`
+5. Open a pull request.
+
+## Security Policy
+
+If you discover any security-related issues, please follow our [Security Policy](SECURITY.md) and report them responsibly.
+
+## Pull Request Template
+
+Before submitting a pull request, please review our [Pull Request Template](PULL_REQUEST_TEMPLATE.md) for guidelines and requirements.
 
 ## License
 
