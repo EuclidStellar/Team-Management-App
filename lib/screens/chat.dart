@@ -30,7 +30,7 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   void initSocket() {
-    socket = IO.io('http://3.7.70.25:8006', <String, dynamic>{
+    socket = IO.io('https://hive-backend-d0zr.onrender.com', <String, dynamic>{
       'transports': ['websocket'],
       'autoConnect': false,
     });
