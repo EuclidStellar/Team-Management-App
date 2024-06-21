@@ -38,7 +38,7 @@ class _PostTextScreenState extends State<PostTextScreen> {
     String storedValue = await secureStorage.readSecureData(key);
     try {
       var apiUrl =
-          'http://ec2-3-7-70-25.ap-south-1.compute.amazonaws.com:8006/image/addImage';
+          'https://hive-backend-d0zr.onrender.com/image/addImage';
 
       var headers = {
         'Authorization': storedValue,
@@ -94,7 +94,7 @@ class _PostTextScreenState extends State<PostTextScreen> {
       var request = http.Request(
           'POST',
           Uri.parse(
-              'http://ec2-3-7-70-25.ap-south-1.compute.amazonaws.com:8006/text/addText/${widget.teamId}'));
+              'https://hive-backend-d0zr.onrender.com/text/addText/${widget.teamId}'));
       request.body = json.encode({"text": _textController.text});
       request.headers.addAll(headers);
 

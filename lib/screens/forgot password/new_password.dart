@@ -20,7 +20,7 @@ class _ChangePasswordState extends State<ChangePassword> {
 
   Future<String?> takePassAPI(String password, String confirmpass) async {
     final String apiUrl =
-        'http://ec2-3-7-70-25.ap-south-1.compute.amazonaws.com:8006/user/newPassword/${widget.email}';
+        'https://hive-backend-d0zr.onrender.com/user/newPassword/${widget.email}';
 
     var body = jsonEncode({
       "newPassword": password,

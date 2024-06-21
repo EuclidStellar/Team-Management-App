@@ -25,7 +25,7 @@ class _ApplyLeaveState extends State<ApplyLeave> {
     String StoreLeaveId;
     dynamic storedValue = await secureStorage.readSecureData(key);
     final String apiUrl =
-        'http://ec2-3-7-70-25.ap-south-1.compute.amazonaws.com:8006/leave/applyLeave/${widget.teamid}';
+        'https://hive-backend-d0zr.onrender.com/leave/applyLeave/${widget.teamid}';
 
     var body = jsonEncode({"leaves": [   
       {
@@ -76,7 +76,7 @@ class _ApplyLeaveState extends State<ApplyLeave> {
   Future<void> LeaveID(String StoreLeaveID) async {
     dynamic storedValue = await secureStorage.readSecureData(key);
     final String apiUrl =
-        'http://ec2-3-7-70-25.ap-south-1.compute.amazonaws.com:8006/leave/leaveResult/$StoreLeaveID';
+        'https://hive-backend-d0zr.onrender.com/leave/leaveResult/$StoreLeaveID';
 
     var headers = <String, String>{
       'Content-Type': 'application/json',

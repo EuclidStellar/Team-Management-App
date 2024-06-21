@@ -19,7 +19,7 @@ class _ChatScreenfetchState extends State<ChatScreenfetch> {
 
   Future<void> fetchChats() async {
     
-    final apiUrl = 'http://ec2-3-7-70-25.ap-south-1.compute.amazonaws.com:8006/chat/getAllChats';
+    final apiUrl = 'https://hive-backend-d0zr.onrender.com/chat/getAllChats';
 
 
     try {

@@ -27,7 +27,7 @@ class _SignUpState extends State<SignUp> {
   }
 
   Future <void> SignApi() async {
-    const String apiUrl = 'http://ec2-3-7-70-25.ap-south-1.compute.amazonaws.com:8006/user/signup';
+    const String apiUrl = 'https://hive-backend-d0zr.onrender.com/user/signup';
     final response = await http.post(
         Uri.parse(apiUrl),
         body:({

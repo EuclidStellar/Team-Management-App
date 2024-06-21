@@ -16,7 +16,7 @@ class _addTaskState extends State<addTask> {
   Future<void> addTaskAPI(String teamcode) async {
     dynamic storedValue = await secureStorage.readSecureData(key);
     // print (storedValue);
-    final String apiUrl = 'http://ec2-3-7-70-25.ap-south-1.compute.amazonaws.com:8006/team/task/$teamcode';
+    final String apiUrl = 'https://hive-backend-d0zr.onrender.com/team/task/$teamcode';
     final response = await http.post(
       Uri.parse(apiUrl),
       headers: <String, String>{

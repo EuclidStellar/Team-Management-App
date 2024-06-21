@@ -20,7 +20,7 @@ class _MyAppBarState extends State<MyAppBar> {
     dynamic storedValue = await secureStorage.readSecureData(key);
 
     const String apiUrl =
-        'http://ec2-3-7-70-25.ap-south-1.compute.amazonaws.com:8006/user/sendName';
+        'https://hive-backend-d0zr.onrender.com/user/sendName';
 
     final response = await http.get(
       Uri.parse(apiUrl),

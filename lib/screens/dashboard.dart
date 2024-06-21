@@ -27,7 +27,7 @@ class dashb_memState extends State<dashb_mem> {
   Future<void> showTeamAPI() async {
     dynamic storedValue = await secureStorage.readSecureData(key);
 
-    const String apiUrl = 'http://ec2-3-7-70-25.ap-south-1.compute.amazonaws.com:8006/team/showTeams';
+    const String apiUrl = 'https://hive-backend-d0zr.onrender.com/team/showTeams';
     final response = await http.get(
         Uri.parse(apiUrl),
         headers: <String, String>{

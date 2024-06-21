@@ -16,7 +16,7 @@ class _ResetPassState extends State<ResetPass> {
 
   Future<String?> takeEmailAPI(String email) async {
     const String apiUrl =
-        'http://ec2-3-7-70-25.ap-south-1.compute.amazonaws.com:8006/user/resetPassword';
+        'https://hive-backend-d0zr.onrender.com/user/resetPassword';
     var body = jsonEncode({
       "email": email,
     });

@@ -23,7 +23,7 @@ class _ImageListScreenState extends State<ImageListScreen> {
 
  Future<void> getImage() async {
    dynamic storedValue = await secureStorage.readSecureData(key);
-  String url = 'http://ec2-3-7-70-25.ap-south-1.compute.amazonaws.com:8006/image/showImage/${widget.teamId}';
+  String url = 'https://hive-backend-d0zr.onrender.com/image/showImage/${widget.teamId}';
   String token = storedValue;
 
   try {

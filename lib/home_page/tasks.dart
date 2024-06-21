@@ -32,7 +32,7 @@ class _TaskContainerState extends State<TaskContainer> {
     dynamic storedValue = await secureStorage.readSecureData(key);
 
     const String apiUrl =
-        'http://ec2-3-7-70-25.ap-south-1.compute.amazonaws.com:8006/team/incompleteTasks';
+        'https://hive-backend-d0zr.onrender.com/team/incompleteTasks';
 
     final response = await http.get(
       Uri.parse(apiUrl),
@@ -56,7 +56,7 @@ class _TaskContainerState extends State<TaskContainer> {
   Future<void> compTaskAPI() async {
     dynamic storedValue = await secureStorage.readSecureData(key);
     const String apiUrl =
-        'http://ec2-3-7-70-25.ap-south-1.compute.amazonaws.com:8006/team/completedTasks';
+        'https://hive-backend-d0zr.onrender.com/team/completedTasks';
 
     final response = await http.get(
       Uri.parse(apiUrl),

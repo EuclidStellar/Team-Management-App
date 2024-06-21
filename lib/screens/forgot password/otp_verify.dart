@@ -19,7 +19,7 @@ class _OTPVerifyState extends State<OTPVerify> {
 
   Future<String?> takeOTPAPI(String otp) async {
     final String apiUrl =
-        'http://ec2-3-7-70-25.ap-south-1.compute.amazonaws.com:8006/user/verifyOTP/${widget.email}';
+        'https://hive-backend-d0zr.onrender.com/user/verifyOTP/${widget.email}';
     var body = jsonEncode({
       "OTP": otp,
     });

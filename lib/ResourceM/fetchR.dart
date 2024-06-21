@@ -21,7 +21,7 @@ class _ShowTextScreenState extends State<ShowTextScreen> {
 
  Future<void> getImage() async {
    dynamic storedValue = await secureStorage.readSecureData(key);
-  String url = 'http://ec2-3-7-70-25.ap-south-1.compute.amazonaws.com:8006/image/showImage/${widget.teamId}';
+  String url = 'https://hive-backend-d0zr.onrender.com/image/showImage/${widget.teamId}';
   String token = storedValue;
 
   try {
@@ -57,7 +57,7 @@ class _ShowTextScreenState extends State<ShowTextScreen> {
       var request = http.Request(
         'GET',
         Uri.parse(
-          'http://ec2-3-7-70-25.ap-south-1.compute.amazonaws.com:8006/text/showText/${widget.teamId}',
+          'https://hive-backend-d0zr.onrender.com/text/showText/${widget.teamId}',
         ),
       );
 

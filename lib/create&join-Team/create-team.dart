@@ -200,7 +200,7 @@ class _CreateTeamScreenState extends State<CreateTeamScreen> {
     var request = http.Request(
       'POST',
       Uri.parse(
-          'http://ec2-3-7-70-25.ap-south-1.compute.amazonaws.com:8006/team/createTeam'),
+          'https://hive-backend-d0zr.onrender.com/team/createTeam'),
     );
 
 

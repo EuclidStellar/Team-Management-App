@@ -28,7 +28,7 @@ class _LeaderResourceState extends State<LeaderResource> {
     var request = http.Request(
       'POST',
       Uri.parse(
-          'http://ec2-3-7-70-25.ap-south-1.compute.amazonaws.com:8006/user/sendMessage/${widget.teamId}'),
+          'https://hive-backend-d0zr.onrender.com/user/sendMessage/${widget.teamId}'),
     );
     request.body = json.encode({
       "Email": emailController.text,

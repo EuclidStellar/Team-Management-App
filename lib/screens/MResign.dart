@@ -16,7 +16,7 @@ class _MresignState extends State<Mresign> {
     dynamic storedValue = await secureStorage.readSecureData(key);
     // print(teamId);
     // print (storedValue);
-    final String apiUrl = 'http://ec2-3-7-70-25.ap-south-1.compute.amazonaws.com:8006/user/sendMessage/$teamId';
+    final String apiUrl = 'https://hive-backend-d0zr.onrender.com/user/sendMessage/$teamId';
     final response = await http.post(
       Uri.parse(apiUrl),
       headers: <String, String>{

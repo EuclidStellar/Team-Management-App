@@ -21,7 +21,7 @@ class _LoginState extends State<Login> {
   TextEditingController passController =TextEditingController();
 
   Future <void> LoginApi() async {
-    const String apiUrl = 'http://ec2-3-7-70-25.ap-south-1.compute.amazonaws.com:8006/user/login';
+    const String apiUrl = 'https://hive-backend-d0zr.onrender.com/user/login';
     final response = await http.post(
         Uri.parse(apiUrl),
         body:({

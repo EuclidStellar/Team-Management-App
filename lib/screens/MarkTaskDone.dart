@@ -15,7 +15,7 @@ class _doneTaskState extends State<doneTask> {
   Future<void> TaskDoneAPI() async {
     dynamic storedValue = await secureStorage.readSecureData(key);
     // print (storedValue);
-    const String apiUrl = 'http://ec2-3-7-70-25.ap-south-1.compute.amazonaws.com:8006/team/taskDone';
+    const String apiUrl = 'https://hive-backend-d0zr.onrender.comteam/taskDone';
     final response = await http.post(
       Uri.parse(apiUrl),
       headers: <String, String>{
